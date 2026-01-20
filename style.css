@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+#cover {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(180deg, #f8cdda, #fceef3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#playBtn {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: none;
+
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  color: white;
+  font-size: 64px;
+  cursor: pointer;
+
+  box-shadow:
+    0 18px 40px rgba(255, 182, 193, 0.45);
+
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+#playBtn:hover {
+  transform: scale(1.08);
+  box-shadow:
+    0 22px 55px rgba(255, 182, 193, 0.55);
+}
+
+#playBtn:active {
+  transform: scale(0.97);
+}
+
+#content {
+  display: none;
+  padding: 40px;
+}
